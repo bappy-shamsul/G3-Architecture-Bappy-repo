@@ -87,7 +87,19 @@
     height: 40px;
     font-size: 18px;
     padding: 5px;
-    margin-top: 100px;
+    margin-top: 0px;
+}
+.explore-more-btn-1{
+    background-color: #ffa500;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 120px;
+    margin-bottom: 50px;
 }
 /* .banner-img{
     margin-top: 50px;   
@@ -101,7 +113,6 @@
     position: relative;
     background-image: url(../images/banner.png);
     background-position: center;
-    /* background-repeat: no-repeat; */
 } 
 /* Grid-text box */
 .grid-txt-box{
@@ -332,8 +343,11 @@
     text-decoration-color: blue;
   }
 /* Media query */
+/* ---------------------------------------------- */
+
 @media only screen and (max-width: 688px) {
 
+    /* navigation bar  */
     .navigation-bar,
     .nav-btn>ul {
         flex-direction: column;
@@ -345,16 +359,31 @@
         align-items: center;
     }
     .banner-txt {
-        position: relative;
         border: none;
+        height: 300px;
+        width: 350px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .banner-body-text{
+        border: none;
+        height: 300px;
+        width: 350px;
+    }
+    .explore-more-btn-1 {
+        margin-top: 180px;
+    }
+    .banner-img{
         width: 100%;
         height: auto;
-        margin-top: 55px;
-        margin-left: 400px;
-        margin-right: 523px;
-        text-align: center;
-        align-items: center;
-    }
+        /* margin-left: 170px;
+        margin-bottom: 70px;
+        margin-top: 80px; */
+        /* position: relative;
+        background-position: center; */
+    } 
+
+    /* grid part */
     .grid-txt-box{
         grid-template-columns: repeat(1, 1fr);
         gap: 5px;
@@ -414,17 +443,19 @@
         width: 100%;
         margin-left: auto;
     }
-    .footer-bottom{
-        width: 100%;
-        margin-left: 3px;
-        border: none;
-        width: 340px;
-        height: 50px;
-    }
+    /* Our Team  */
+
     .team-image{
         flex-direction: column;
         gap: 10px;
         justify-content: center;
-        margin: 5px 5px 5px -195px
+        margin: 5px 5px 5px -195px;
     }
-}
+}    .footer-bottom{
+        width: 100%;
+        margin-left: 3px;
+        border: none;
+        width: 400px;
+        height: 50px;
+    }
+    
